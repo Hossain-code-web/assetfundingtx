@@ -1,0 +1,480 @@
+*{padding: 0;margin: 0;-webkit-box-sizing: border-box;box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  .container{
+    width: 100%;
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+
+
+/***hamburger***/
+.hamburger, .cross{
+    padding: 10px 12px;
+    height: 10%;
+    display: none;
+}
+.showMenu{
+    left: 0!important;
+}
+/**Responsive code for hamburger****/
+@media (max-width: 450px){
+#banner h1 {
+    font-size: 38px!important;
+
+}
+#banner h2 {
+    font-size: 20px!important;
+    }}
+@media (max-width: 991px) {
+    #about .row .col-2 {
+   
+    flex-basis: 70%!important;
+    margin:10px auto;
+}
+.contact {
+    flex-basis: 100%!important;
+
+}
+.contact-location {
+    flex-basis: 100%!important;
+}
+    #header{
+     
+        position: relative;
+    }
+    .active{
+        color: #ffffff!important;
+    }
+    .logo {
+        margin: 8px 0!important;
+    }
+    .navigation li a{
+        padding: 25px 13px!important;
+    }
+   #header .navigation{
+    display: block!important;
+    position: absolute;
+    width: 100%;
+    background: #f49425;
+    top: 76px;
+    left: -101%;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+     
+    }
+    .navigation li {
+        display: block!important;
+    }
+    .navigation ul {
+        list-style: none;
+        width: 100%;
+        text-align: left;
+    }
+  
+    .hamburger i, .cross i{
+        font-size: 23px;
+       color: #f49425;
+    }
+.hamburger{
+        border: none;
+       background-color: transparent;
+        border-radius: 3px;
+        outline: none;
+        padding: 6px 10px;
+        display: block;
+        margin-right: 20px;
+    }
+  }
+/*****/
+/*#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+    z-index: 999;
+    
+}*/
+#header .logo img{
+    max-width: 100%;
+}
+.logo {
+    margin-top: 7px;
+}
+#header .row .col-2{
+    
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#header{
+    background-color: #1e2534;
+}
+#header .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.logo-flex{
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    min-width: 189px;
+}
+.navigation {
+    text-align: right;
+}
+.navigation ul{
+    list-style: none;
+}
+.navigation li{
+    display: inline-block;
+}
+.navigation li{
+  
+  
+    
+   
+    
+}
+.navigation ul{
+    list-style: none;
+}
+.navigation li{
+    display: inline-block;
+}
+.navigation li .all{
+    padding: 38px 15px;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    
+}
+.active{
+    color: #f49425;
+    padding: 38px 15px;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    width: 100%;
+}
+.active::after{
+    position: absolute;
+    content: " ";
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    -webkit-transform: scaleX(1)!important;
+        -ms-transform: scaleX(1)!important;
+            transform: scaleX(1)!important;
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    background-color: #f49425;
+}
+.navigation li a::after{
+    position: absolute;
+    content: " ";
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    background-color: #f49425;
+    /* background-origin: left right; */
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.navigation li a:hover{
+    color: #f49425;
+}
+.navigation li a:hover::after{
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+} 
+/****banner section***/
+#banner{
+    /* background:linear-gradient(to top, rgba(245, 246, 252, 0.226), rgba(214, 213, 214, 0.73)),
+    url('new.jpg'); */
+    background: url(about-us-assetfundingtx-banner.jpg);
+    min-height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#banner h2{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 15px;
+}
+#banner h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    padding-left: 15px;
+}
+#banner .btn a{
+    text-decoration: none;
+    background: #fff;
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 4px;
+    margin-top: 8px;
+    color: #f5961d;
+}
+#banner .btn a:hover{
+    background: #2d210e;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    color: #fff;
+}
+#banner .list{
+    margin: 15px 0;
+}
+#banner .list ul li{
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+}
+#banner .list ul{
+    list-style: none;
+}
+#banner .list ul li i{
+    color: #1aa9b6;
+    margin-right: 15px;
+}
+
+
+/****contact us tab****/
+#contact-us #banner{
+    /* background:linear-gradient(to top, rgba(245, 246, 252, 0.226), rgba(214, 213, 214, 0.73)),
+    url('new.jpg'); */
+    background: url(contact-us-assetfungtx-banner.jpg);
+    min-height: 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+#contact-us #banner h2{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 15px;
+}
+#contact-us #banner h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    padding-left: 15px;
+}
+#contact-tab{
+    background-color: #eeeeef;
+    padding-top: 50px;
+    padding-bottom: 50px;
+        
+}
+#contact-tab .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-location {
+    
+    flex-basis: 25%;
+}
+.mapouter {
+    width: 100%!important;
+}
+.gmap_canvas {
+    width: 100%!important;
+}
+
+
+
+/***contact us***/
+input, textarea{
+    width: 100%;
+}
+
+#contact{
+    background-color: #eeeeef;
+    padding-top: 50px;
+    padding-bottom: 50px;
+        background: url(contact-us-assetfungtx.jpg);
+}
+#contact .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#contact  h2{
+    font-size: 25px;
+    position: relative;
+    margin-bottom: 16px;
+    color: #248ab7;
+    font-weight: 700;
+    text-align: center;
+}
+#contact .loans-about span{
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    color: #000;
+   
+}
+.contact{
+    flex-basis: 50%;
+        padding: 30px;
+    background: #fff;
+        border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+#contact input{
+
+        padding: 0.675rem 0.75rem;
+ width: 100%;
+    margin: auto;
+
+   border-radius: 0rem!important;
+    display: inline-block;
+        font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #b9b7b7;
+}
+.same{
+    width: 49%;
+}
+.same1{
+    width: 100%;
+}
+textarea{
+    padding: 0.675rem 0.75rem;
+    font-family: 'Inter', sans-serif;
+      border: 1px solid #b9b7b7;
+          font-size: 1rem;
+}
+#contact .submit-btn input{
+  
+    color: #fff;
+    cursor: pointer;
+    background-color: #1e2534!important;
+}
+.contact-location{
+    padding: 30px;
+    background-color: #1e2534;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+#contact UL{
+    list-style: none;
+}
+#contact ul li{
+    color: #fff;
+    line-height: 1.5;
+}
+#contact ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#contact i{
+    color: #fff;
+}
+#contact ul li a:hover{
+    text-decoration: underline;
+}
+.sucess{
+    font-size: 20px;
+    display: none;
+    color: green;
+    font-weight: 600;
+    animation: buttons 0.3s linear ;
+}
+.wrong{
+    font-size: 20px;
+    display: none;
+    color: red;
+    font-weight: 600;
+    animation: buttons 0.3s linear ;
+}
+@keyframes buttons{
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform:scale(0.5) ;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
